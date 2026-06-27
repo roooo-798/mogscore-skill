@@ -1,0 +1,53 @@
+{
+  "name": "mogscore-skill",
+  "version": "0.1.4",
+  "private": false,
+  "description": "Host-specific agent skills for running the MogScore free AI Face Rating preview.",
+  "type": "module",
+  "bin": {
+    "mogscore-skill": "bin/mogscore-skill.mjs"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "shared/",
+    "skills/",
+    "codex/",
+    "claude-code/",
+    "openclaw/",
+    "hermes/",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roooo-798/mogscore-skill.git"
+  },
+  "homepage": "https://mogscore.ai/mog-rating",
+  "bugs": {
+    "url": "https://github.com/roooo-798/mogscore-skill/issues"
+  },
+  "license": "MIT-0",
+  "keywords": [
+    "mogscore",
+    "agent-skill",
+    "codex",
+    "claude-code",
+    "openclaw",
+    "hermes",
+    "face-rating"
+  ],
+  "scripts": {
+    "check": "node --check bin/mogscore-skill.mjs && node --check lib/install.mjs && node --check shared/scripts/run-mog-rating-preview.mjs && node --check skills/mog-rating-preview/scripts/run-mog-rating-preview.mjs && node --check codex/mog-rating-preview/scripts/run-mog-rating-preview.mjs && node --check claude-code/mog-rating-preview/scripts/run-mog-rating-preview.mjs && node --check openclaw/mog-rating-preview/scripts/run-mog-rating-preview.mjs && node --check hermes/mog-rating-preview/scripts/run-mog-rating-preview.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "playwright-core": "1.51.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,20 @@
+name: Publish ClawHub Skill
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "openclaw/mog-rating-preview/**"
+      - ".github/workflows/clawhub-publish.yml"
+
+jobs:
+  publish:
+    uses: openclaw/clawhub/.github/workflows/skill-publish.yml@main
+    with:
+      owner: mogscore
+      skill_path: openclaw/mog-rating-preview
+      dry_run: false
+    secrets:
+      clawhub_token: ${{ secrets.CLAWHUB_TOKEN }}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mog Rating Preview"
+  short_description: "Run official MogScore preview"
+  default_prompt: "Use $mog-rating-preview to upload a photo through MogScore's headed web flow and return the free AI Face Rating preview JSON."
