@@ -49,7 +49,7 @@ host runtime already provides dependencies.
 After the OpenClaw skill is published:
 
 ```bash
-clawhub install @mogscore/mog-rating-preview
+clawhub install @roooo-798/mog-rating-preview
 ```
 
 Publish manually:
@@ -59,7 +59,7 @@ clawhub login
 clawhub skill publish openclaw/mog-rating-preview \
   --slug mog-rating-preview \
   --name "Mog Rating Preview" \
-  --owner mogscore
+  --owner roooo-798
 ```
 
 The repository also includes `.github/workflows/clawhub-publish.yml`, which uses

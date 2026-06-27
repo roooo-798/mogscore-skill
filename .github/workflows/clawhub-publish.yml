@@ -13,7 +13,7 @@ jobs:
   publish:
     uses: openclaw/clawhub/.github/workflows/skill-publish.yml@main
     with:
-      owner: mogscore
+      owner: roooo-798
       skill_path: openclaw/mog-rating-preview
       dry_run: false
     secrets:
